@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Couple Match Checker</title>
+</head>
+<body>
+    <div class="container">
+    <h2>Check Your Compatibility</h2>
+    <form action="/result" method="POST">
+        <label>Your Name:</label>
+        <input type="text" name="your_name" required><br>
+
+        <label>Partner's Name:</label>
+        <input type="text" name="partner_name" required><br>
+
+        <label>Your Age:</label>
+        <input type="number" name="your_age" required><br>
+
+        <label>Partner's Age:</label>
+        <input type="number" name="partner_age" required><br>
+
+        <label>Your Zodiac Sign:</label>
+        <input type="text" name="your_zodiac" required><br>
+
+        <label>Partner's Zodiac Sign:</label>
+        <input type="text" name="partner_zodiac" required><br>
+
+        <label>Your Hobbies (comma-separated):</label>
+        <input type="text" name="your_hobbies" required><br>
+
+        <label>Partner's Hobbies (comma-separated):</label>
+        <input type="text" name="partner_hobbies" required><br>
+
+        <label>Your Interests:</label>
+        <input type="text" name="your_interests" required><br>
+
+        <label>Partner's Interests:</label>
+        <input type="text" name="partner_interests" required><br>
+
+        <button type="submit">Check Compatibility</button>
+    </form>
+</body>
+</html>
